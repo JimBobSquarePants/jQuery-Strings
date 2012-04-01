@@ -12,7 +12,7 @@ Returns a result indicating whether the given string is null or empty.
 
 ***object** - The string check against.*
 
-*Return Type : Boolean.*
+***Return Type** : Boolean.*
 
 usage
 
@@ -30,7 +30,7 @@ Checks to see if a given string contains the given substring.
 
 ***ignoreCase** - A value indicating whether the case of the given string and substring is to be ignored.*
 
-*Return Type : Boolean.*
+***Return Type** : Boolean.*
 
 usage
 
@@ -47,7 +47,7 @@ Checks to see if a given string starts with the given substring.
 
 ***ignoreCase** - A value indicating whether the case of the given string and substring is to be ignored.*
 
-*Return Type : Boolean.*
+***Return Type** : Boolean.*
 
 usage
 
@@ -64,7 +64,7 @@ Checks to see if a given string ends with the given substring.
 
 ***ignoreCase** - A value indicating whether the case of the given string and substring is to be ignored.*
 
-*Return Type : Boolean.*
+***Return Type** : Boolean.*
 
 usage
 
@@ -77,9 +77,9 @@ A very simple implimentation of the NET frameworks' String.Format method this me
 
 ***string** - The string to format.*
 
-*args - A collection of arguments to insert into the string.*
+***args** - A collection of arguments to insert into the string.*
 
-*Return Type : String.*
+***Return Type** : String.*
 
 usage
 
