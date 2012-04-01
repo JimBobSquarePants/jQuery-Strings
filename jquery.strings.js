@@ -1,4 +1,29 @@
-﻿//#region String Extensions.
+/*!
+* jQuery Strings Plugin v1.0.0
+* https://github.com/JimBobSquarePants/jQuery-Strings
+*
+* Copyright 2012, James South
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* http://jquery.org/license
+*
+* It is recommended that this file is minified before serving.
+*/
+
+(function($){
+    $.isBoolean = function (obj) {
+        /// <summary>
+        ///     Checks the value of the given object to see whether it is a valid Boolean.
+        /// </summary>
+        /// <param name="obj" type="Object">
+        ///     The object to check against.
+        /// </param>
+        /// <returns type="Boolean">True if the given object is a valid Boolean, otherwise false.</returns>
+
+        return obj === true || obj === false;
+    };
+} (jQuery || _jQuery));
+
+//#region String Extensions.
 (function ($) {
     $.stringIsNullOrEmpty = function (string) {
         /// <summary>
@@ -129,6 +154,7 @@
         ///     string with a list of objects.
         ///     &#10; e.g. $.stringFormat({0}:{1}, A, B) becomes A : B
         ///     &#10; http://stackoverflow.com/questions/610406/javascript-printf-string-format/4673436#4673436
+        ///     &#10; http://stackoverflow.com/questions/1038746/equivalent-of-string-format-in-jquery
         /// </summary>
 
         // jsLint doesn't like the use of an unnamed parameter here but we need it.
@@ -137,9 +163,13 @@
             // Make a copy of the arguments array but trim of the first one as that is our string.
             var args = Array.prototype.slice.call(arguments, 1);
 
-            return arguments[0].replace(/\{(\d+)\}/g, function (match, number) {
-                return args[number] === undefined ? "{" + number + "}" : args[number];
-            });
+            return arguments[0].replace(/\{\{|\}\}|\{(\d+)\}/g, function (match, number) {
+               
+               if (match === "{{") { return "{"; }
+               if (match === "}}") { return "}"; }
+
+               return args[number];
+             });
         }
         return undefined;
     };

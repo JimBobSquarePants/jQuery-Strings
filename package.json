@@ -1,0 +1,42 @@
+{
+    "name": "jquery.strings",
+    "version": "1.0.0",
+    "title": "jQuery.strings()",
+    "author": {
+        "name": "James South",
+        "url": "https://github.com/jimbobsquarepants"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        },
+        {
+            "type": "GPLv2",
+            "url": "http://www.opensource.org/licenses/GPL-2.0"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1+"
+    },
+    "description": "The main purpose of this plugin is to allow simple manipulation of strings.",
+    "keywords": [
+        "strings",
+        "startswith",
+        "endswith",
+        "contains",
+        "isnullorempty",
+        "format"
+
+    ],
+    "homepage": "https://github.com/jimbobsquarepants/jquery-strings",
+    "maintainers": [
+        {
+            "name": "James South",
+            "url": "https://github.com/jimbobsquarepants"
+        }
+    ],
+    "files": [
+        "jquery.strings.js"
+    ]
+}
