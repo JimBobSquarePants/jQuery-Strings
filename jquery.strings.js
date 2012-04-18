@@ -21,7 +21,7 @@
 
         return obj === true || obj === false;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 
 //#region String Extensions.
 (function ($) {
@@ -42,7 +42,7 @@
 
         return empty;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 
 (function ($) {
     $.stringContains = function (string, subString, ignoreCase) {
@@ -76,7 +76,7 @@
 
         return found;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 
 (function ($) {
     $.stringStartsWith = function (string, subString, ignoreCase) {
@@ -110,7 +110,7 @@
 
         return found;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 
 (function ($) {
     $.stringEndsWith = function (string, subString, ignoreCase) {
@@ -144,7 +144,7 @@
 
         return found;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 
 (function ($, undefined) {
 
@@ -173,5 +173,5 @@
         }
         return undefined;
     };
-} (jQuery || _jQuery));
+} (jQuery));
 //#endregion String Extensions.
