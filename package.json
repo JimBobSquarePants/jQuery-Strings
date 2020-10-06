@@ -17,7 +17,7 @@
         }
     ],
     "dependencies": {
-        "jquery": "1+"
+        "jquery": "3+"
     },
     "description": "The main purpose of this plugin is to allow simple manipulation of strings.",
     "keywords": [
