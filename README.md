@@ -1,10 +1,10 @@
-#jQuery Strings
+# jQuery Strings
 
 This plugin adds a few utility methods to the jQuery namespace in order to allow easier manipulation of strings.
 
 Methods added:
 
-##stringIsNullOrEmpty
+## stringIsNullOrEmpty
 
 Returns a result indicating whether the given string is null or empty.
 
@@ -19,7 +19,7 @@ usage
     var empty = $.stringIsNullOrEmpty(object);
 
 
-##stringContains
+## stringContains
 Checks to see if a given string contains the given substring.
 
 **stringContains(string, subString, ignoreCase)**
@@ -36,7 +36,7 @@ usage
 
     var contains = $.stringContains(testString, testSubString, true);
 
-##stringStartsWith
+## stringStartsWith
 Checks to see if a given string starts with the given substring.
 
 **stringStartsWith(string, subString, ignoreCase)**
@@ -53,7 +53,7 @@ usage
 
     var startsWith = $.stringStartsWith(testString, testSubString, true);
 
-##stringEndsWith
+## stringEndsWith
 Checks to see if a given string ends with the given substring.
 
 **stringEndsWith(string, subString, ignoreCase)**
